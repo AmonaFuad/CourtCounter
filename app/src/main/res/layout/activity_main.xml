@@ -1,0 +1,194 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3E5F5"
+    android:id="@+id/Base"
+
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        android:background="#EA80FC"
+        android:orientation="vertical"
+        android:padding="10dp"
+       >
+
+        <TextView
+            android:id="@+id/teamA2_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Team A"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:id="@+id/point1_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="0"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/three1_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+3 Points"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:onClick="addthreeA"
+            />
+
+        <Button
+            android:id="@+id/two2_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="+2 Points"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:onClick="addTwoA"/>
+
+        <Button
+            android:id="@+id/free2_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="Free throw"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:onClick="freeThrowA"
+
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FF9800"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        android:background="#EA80FC"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/teamA_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Team B"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/point_textViewB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="0"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/three_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+3 Points"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:onClick="addthreeB"
+            />
+
+        <Button
+            android:id="@+id/two_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="+2 Points"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:onClick="addTwoB"/>
+
+        <Button
+            android:id="@+id/free_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="Free throw"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:onClick="freeThrowB"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+    <Button
+        android:id="@+id/Reset_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Base"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Reset"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:fontFamily="monospace"
+
+        android:gravity="center"
+        android:onClick="reseTbutton"
+
+
+        />
+</RelativeLayout>
